@@ -14,7 +14,7 @@ for fileName in os.listdir(dataFolder):
 
 allWords = []
 for fileName in wordFiles:
-    wordFile = open(dataFolder + fileName, 'r', encoding="utf-8")
+    wordFile = open(dataFolder + fileName, 'r', encoding="utf-16")
     for line in wordFile.readlines():
         allWords.append(line.strip())
 
